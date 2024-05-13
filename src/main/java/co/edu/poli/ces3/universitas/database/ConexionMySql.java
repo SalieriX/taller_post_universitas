@@ -120,7 +120,7 @@ public class ConexionMySql {
         createConexion();
         PreparedStatement statement = null;
         try {
-            String consulta = "INSERT INTO usuarios (mail, name, lastName) VALUES (?, ?, ?)";
+            String consulta = "INSERT INTO users (mail, name, lastName) VALUES (?, ?, ?)";
             statement = cnn.prepareStatement(consulta);
             statement.setString(1, usuario.getEmail());
             statement.setString(2, usuario.getName());
